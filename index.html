@@ -4,70 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="assets/css/template.css" />
-    <title>Exercicio Forms</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="assets/images/img/travel-bag.png">
+    <title>Exercicio Forms</title>
 </head>
 <body>
     <header>
-        <div class="logo">Adventurer</div>
-        <nav>
-            <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Aventuras</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Contato</a></li>
-                <li><a href="#">Blog</a></li>
-            </ul>
-        </nav>
-        <button class="cta">Inicie sua aventura!</button>
+        <div class="header-container">
+            <div class="logo">Adventurer</div>
+            <button class="menu-toggle" aria-label="Abrir menu">
+                <img src="assets/images/icons/Hamburger_icon.svg.png" alt="Menu" width="24" height="24">
+            </button>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="#aventuras">Aventuras</a></li>
+                    <li><a href="#familia">Sobre</a></li>
+                    <li><a href="mensagem.html">Contato</a></li>
+                    <li><a href="manutencao.html">Blog</a></li>
+                </ul>
+            </nav>
+            <a href="index.html" class="cta">Inicie sua aventura!</a>
+        </div>
     </header>
     
     <section class="hero">
-        <div class="hero-text">
-            <h1>Estamos aqui para encontrar <br> <span>Sua Nova Aventura</span> 🌞</h1>
-            <p>Tentamos deixar sua vida mais animada do que antes e oferecemos tudo o que você precisa para uma
-                viagem memorável da maneira mais simples possível
-            </p>
-            <div class="search-box">
-                <input type="text" placeholder="Check In/Out">
-                <input type="text" placeholder="Passageiros">
-                <button>Iniciar aventura</button>
+        <div class="container">
+            <div class="hero-text">
+                <h1>Estamos aqui para encontrar <br> <span>Sua Nova Aventura</span> 🌞</h1>
+                <p>Tentamos deixar sua vida mais animada do que antes e oferecemos tudo o que você precisa para uma
+                    viagem memorável da maneira mais simples possível
+                </p>
+                <div class="search-box">
+                    <input type="text" placeholder="Check In/Out">
+                    <input type="text" placeholder="Passageiros">
+                    <a href="index.html" class="cta_button">Inicie sua aventura!</a>
+                </div>
             </div>
-        </div>
-        <div class="hero-image">
-            <img src="assets/images/img/viagem-cachorro.svg" alt="Ilustração de um viajante">
+            <div class="hero-image">
+                <img src="assets/images/img/viagem-cachorro.svg" alt="Ilustração de um viajante">
+            </div>
         </div>
     </section>
 
-    <section class="benefits">
-        <div class="title">
-            <h2>Por que escolher a gente?</h2>
-        </div>
-        <div class="container">
-            <div class="benefit">
-                <span class="icon">🌟</span>
-                <h3>Pacotes especiais</h3>
-                <p>Incentivamos você a tentar novidades.</p>
+    <div class="benefits-container">
+        <section class="benefits">
+            <div class="title">
+                <h2>Por que escolher a gente?</h2>
             </div>
-            <div class="benefit">
-                <span class="icon">🔁</span>
-                <h3>Simplificação</h3>
-                <p>Facilitamos como você viaja pelos melhores lugares do mundo.</p>
+            <div class="container">
+                <div class="benefit">
+                    <span class="icon">🌟</span>
+                    <h3>Pacotes especiais</h3>
+                    <p>Incentivamos você a tentar novidades.</p>
+                </div>
+                <div class="benefit">
+                    <span class="icon">🔁</span>
+                    <h3>Simplificação</h3>
+                    <p>Facilitamos como você viaja pelos melhores lugares do mundo.</p>
+                </div>
+                <div class="benefit">
+                    <span class="icon">🔥</span>
+                    <h3>Melhores serviços</h3>
+                    <p>Criamos experiências especiais para você.</p>
+                </div>
+                <div class="benefit">
+                    <span class="icon">🎧</span>
+                    <h3>Suporte 24h</h3>
+                    <p>A qualquer momento, de qualquer lugar, estamos aqui para te atender.</p>
+                </div>
             </div>
-            <div class="benefit">
-                <span class="icon">🔥</span>
-                <h3>Melhores serviços</h3>
-                <p>Criamos experiências especiais para você.</p>
-            </div>
-            <div class="benefit">
-                <span class="icon">🎧</span>
-                <h3>Suporte 24h</h3>
-                <p>A qualquer momento, de qualquer lugar, estamos aqui para te atender.</p>
-            </div>
-        </div>
-    </section>
+        </section>
+    </div>
     
-    <section class="destinos">
+    <section id="aventuras" class="destinos">
         <h2>Nossos melhores destinos</h2>
         <p>Vamos encontrar alguns deles</p>
         <div class="destinos-container">
@@ -90,7 +100,7 @@
         </div>
     </section>
     
-    <section class="familia">
+    <section id="familia" class="familia">
         <div class="viagem-imagem">
             <img src="assets/images/img/objetivo.svg" alt="retratando uma Viagem Incrível">
         </div>
@@ -105,18 +115,89 @@
         </div>
     </section>
 
-    <section class="confianca">
-        <div class="confianca-texto">
+    <section class="feature">
+        <div class="feature-texto">
             <h2>Temos muita sorte de ter você e sua confiança</h2>
-            <p>Com milhares de viajantes satisfeitos, continuamos nossa missão de oferecer experiências incríveis. Valorizamos sua confiança e estamos sempre inovando para trazer o melhor em viagens e aventuras para você.</p>
+            <div class="feature-metricas">
+                <div class="feature-item">
+                    <span>+5000</span>
+                    <p>Aventureiros</p>
+                </div>
+                <div class="feature-item">
+                    <span>+8000</span>
+                    <p>Viagens</p>
+                </div>
+                <div class="feature-item">
+                    <span>98%</span>
+                    <p>Satisfação do Consumidor</p>
+                </div>
+                <div class="feature-item">
+                    <span>95%</span>
+                    <p>Avaliação 5 Estrelas</p>
+                </div>
+                <div class="feature-item">
+                    <span>+120</span>
+                    <p>Destinos Exclusivos</p>
+                </div>
+                <div class="feature-item">
+                    <span>24/7</span>
+                    <p>Suporte ao Cliente</p>
+                </div>
+            </div>
         </div>
-        <div class="confianca-imagem">
-            <img src="assets/images/img/comunidade.svg" alt="Confiança dos clientes">
+        <div class="feature-imagem">
+            <img src="assets/images/img/comunidade.svg" alt="Ilustração de uma comunidade">
         </div>
     </section>
-    
+
+    <section class="global">
+        <div class="global-imagem">
+            <img src="assets/images/img/global.svg" alt="Ilustração de viagem pelo mundo">
+        </div>
+        <div class="global-texto">
+            <h2>Junte-se à nossa família e torne-se um aventureiro</h2>
+            <p>Embarque na jornada dos seus sonhos com quem entende de aventuras incríveis! Ao se juntar à nossa família de viajantes,
+                 você não estará apenas explorando novos destinos, mas criando memórias, descobrindo culturas fascinantes e vivendo experiências
+                  únicas ao redor do mundo. Não importa se você é um mochileiro de primeira viagem ou um expert em aventuras – juntos, vamos além! </p>
+            <p>Vem com a gente e transforme cada viagem em uma nova história para contar. Seja o aventureiro que sempre sonhou ser!</p>
+        </div>
+    </section>
+
     <footer>
-        <p>Adventurer &copy; 2025</p>
+        <div class="container">
+            <div class="columns-wrapper">
+                <div class="column">
+                    <h3>Serviços</h3>
+                    <a href="manutencao.html">Viagens</a>
+                    <a href="manutencao.html">Hotéis</a>
+                    <a href="manutencao.html">Guias</a>
+                </div>
+                <div class="column">
+                    <h3>Sobre</h3>
+                    <a href="manutencao.html">Empregos</a>
+                    <a href="manutencao.html">Time</a>
+                    <a href="manutencao.html">Carreira</a>
+                </div>
+                <div class="column">
+                    <h3>Carreira</h3>
+                    <a href="manutencao.html">Trabalhe conosco</a>
+                    <a href="manutencao.html">Depoimentos</a>
+                    <a href="manutencao.html">Benefícios</a>
+                </div>
+            </div>
+            <div class="footer_item">
+                <div class="footer_social">
+                    <a href="manutencao.html"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" width="32" /></a>
+                    <a href="manutencao.html"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" width="32" /></a>
+                    <a href="manutencao.html"><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram" width="32" /></a>
+                    <a href="manutencao.html"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="32" /></a>
+                </div>
+                <div class="footer_copyright">
+                    Adventurer © 2025
+                </div>
+            </div>
+        </div>
     </footer>
+    <a id="back-to-top" href="#" aria-label="Voltar ao topo">↑</a>
 </body>
 </html>
